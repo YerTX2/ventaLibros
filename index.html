@@ -185,10 +185,10 @@
       cart.forEach(item => {
         total += item.price;
         let li = document.createElement("li");
-        li.textContent = ${item.name} - S/${item.price};
+        li.textContent = `${item.name} - S/${item.price}`;
         cartList.appendChild(li);
       });
-      totalElement.textContent = Total: S/${total};
+      totalElement.textContent = `Total: S/${total}`;
     }
     function toggleBooks(sectionId) {
       const section = document.getElementById(sectionId);
